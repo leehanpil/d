@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- ㅁㄹ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="converter.js"></script>
+    <title>Ascii Code 변환기</title>
+</head>
+<body>
+    <h1>Ascii Code 변환기</h1>
+
+    <label for="asciiInput">Ascii Code:</label>
+    <input type="text" id="asciiInput" placeholder="Ascii Code 입력" oninput="convertAscii()">
+
+    <label for="conversionType">변환:</label>
+    <select id="conversionType" onchange="convertAscii()">
+        <option value="decimal">10진수</option>
+        <option value="hex">16진수</option>
+        <option value="octal">8진수</option>
+        <option value="binary">2진수</option>
+    </select>
+    <h2 data-ke-size="size26">Ascii Code 변환기의 주요 기능</h2>
+    <p><b></b></p>
+    <div id="result"></div>
+</body>
+</html>
